@@ -1,6 +1,6 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = OrionLib:MakeWindow({Name = "Forsaken Script", HidePremium = false, SaveConfig = true, ConfigFolder = "ForsakenConfig"})
+local Window = OrionLib:MakeWindow({Name = "Forsaken Script", HidePremium = false, SaveConfig = true, ConfigFolder = "ForsakenConfig", IntroEnabled = false})
 
 local Sprinting = game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting
 local m = require(Sprinting)
