@@ -20,7 +20,7 @@ Icon = <string> - URL to the image you want displayed on the window.
 CloseCallback = <function> - Function to execute when the window is closed.
 ]]
 local SprintTab = Window:MakeTab({
-	Name = "Sprint",
+	Name = "Character",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
@@ -54,16 +54,15 @@ SprintTab:AddSlider({
 		m.SprintSpeed = Value
 	end    
 })
+
+SprintTab:AddButton({
+	Name = "Enable Jump",
+	Callback = function()
+      	game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 7.2
+  	end    
+})
+
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
-]]
---[[
-Name = <string> - The name of the slider.
-Min = <number> - The minimal value of the slider.
-Max = <number> - The maxium value of the slider.
-Increment = <number> - How much the slider will change value when dragging.
-Default = <number> - The default value of the slider.
-ValueName = <string> - The text after the value number.
-Callback = <function> - The function of the slider.
 ]]
