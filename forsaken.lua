@@ -55,6 +55,19 @@ SprintTab:AddSlider({
 	end    
 })
 
+SprintTab:AddSlider({
+	Name = "Sprint Gain",
+	Min = 10,
+	Max = 100000,
+	Default = 25,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "sprintgain",
+	Callback = function(Value)
+		m.StaminaGain = Value
+	end    
+})
+
 SprintTab:AddButton({
 	Name = "Enable Jump (WiP)",
 	Callback = function()
