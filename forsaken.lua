@@ -56,9 +56,10 @@ SprintTab:AddSlider({
 })
 
 SprintTab:AddButton({
-	Name = "Enable Jump",
+	Name = "Enable Jump (WiP)",
 	Callback = function()
-      	game.Players.LocalPlayer.Character.Humanoid.JumpHeight = 7.2
+      	game.Workspace.Players.Spectating.ilikewwaffless.Humanoid.JumpHeight = 7.2
+        game.Workspace.Players.Spectating.ilikewwaffless.Humanoid.JumpPower = 50
   	end    
 })
 
